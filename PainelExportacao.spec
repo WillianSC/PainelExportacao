@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(
-    ['PainelExportacao_NFCE_FUNCIONANDOPERFEITAMENTE.py'],
+    ['PainelExportacao.py'],
     pathex=[],
     binaries=[],
     datas=[],
@@ -28,7 +28,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='PainelExportacao_NFCE_FUNCIONANDOPERFEITAMENTE',
+    name='PainelExportacao',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

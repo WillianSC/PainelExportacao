@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import simpledialog
 from datetime import datetime
+from tkinter import messagebox
 from dateutil.parser import parse
 from asyncio import sleep
 from selenium import webdriver
@@ -160,9 +161,12 @@ def reintegra_cupom(driver, soup):
         botaoReintegrar = driver.find_element(By.XPATH,'/html/body/div/div[2]/div/div/div[1]/div/button/p')
         botaoReintegrar.click()
 
+def on_close():
+    if messagebox.askokcancel("Fechar programa", "Tem certeza que deseja sair?"):
+        root.destroy()
+
 def main():
-    logging.info("Abrindo Navegador")
-    # Abre o Navegador
+    logging.info("Abrindo Navegador") # Abre o Navegador
     driver_path = "C:\ChromeDriver\chromedriver.exe"
     driver = webdriver.Chrome()
     driver.maximize_window()
@@ -170,6 +174,27 @@ def main():
     assert "Painel" in driver.title
 
     login(driver)  # Realiza Login
+
+    # Solicitar a data de processamento ao usuário
+    root = tk.Tk()
+    root.withdraw()
+    root.protocol("WM_DELETE_WINDOW", on_close)  # Definir tratamento para o fechamento da janela
+
+    data_processamento = None
+    while data_processamento is None:
+        data_processamento = simpledialog.askstring("Data de Processamento", "Qual a data de processamento (DD-MM-YYYY)?")
+        if data_processamento is None:
+            if not messagebox.askokcancel("Fechar programa", "Tem certeza que deseja sair?"):
+                continue  # Continua no loop para solicitar nova data
+            else:
+                logging.info("Nenhuma data de processamento inserida. Encerrando o programa.")
+                root.destroy()
+                return
+        else:
+            converted_date = convert_date_format(data_processamento)
+            if not converted_date:
+                messagebox.showerror("Erro", "Formato de data inválido. Tente novamente.")
+                data_processamento = None
 
     # Lista de Lojas e PDVs
     lojas_pdvs = [
@@ -195,20 +220,6 @@ def main():
         {"loja": "5282", "pdvs": ["1", "2", "3", "4"]},
         {"loja": "5284", "pdvs": ["1", "2", "3", "4"]}
     ]
-
-    # Solicitar a data de processamento ao usuário
-    root = tk.Tk()
-    root.withdraw()
-    while True:
-        data_processamento = simpledialog.askstring("Data de Processamento", "Qual a data de processamento (DD-MM-YYYY)?")
-        if data_processamento:
-            converted_date = convert_date_format(data_processamento)
-            if converted_date:
-                break
-            else:
-                logging.error("Formato de data inválido. Tente novamente.")
-        else:
-            logging.error("Nenhuma data inserida. Tente novamente.")
     
     # Loop para iterar sobre as lojas e PDVs
     for item in lojas_pdvs:
@@ -235,6 +246,7 @@ def main():
             limpa_filtro_loja(driver)  # Limpa os campos de loja antes do próximo loop
             limpa_filtro_pdv(driver)  # Limpa os campos de pdv antes do próximo loop
             time.sleep(1)  # Pequeno atraso para aguardar a ação concluir
+
     # Fechar o navegador após a conclusão do loop
     driver.quit()
 

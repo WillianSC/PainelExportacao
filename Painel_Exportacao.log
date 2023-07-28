@@ -51,3 +51,223 @@
 2023-07-28 09:08:16,492 - INFO - Preenchendo Informação de Loja: 5114
 2023-07-28 09:08:20,869 - INFO - Convertendo Data inserida
 2023-07-28 09:08:21,270 - INFO - Ativando CheckBox's
+2023-07-28 10:33:18,330 - INFO - Abrindo Navegador
+2023-07-28 10:33:20,533 - INFO - Realizando Login
+2023-07-28 10:35:11,530 - INFO - Abrindo Navegador
+2023-07-28 10:35:13,828 - INFO - Realizando Login
+2023-07-28 10:39:42,223 - INFO - Abrindo Navegador
+2023-07-28 10:39:44,513 - INFO - Realizando Login
+2023-07-28 10:44:08,832 - INFO - Abrindo Navegador
+2023-07-28 10:44:11,534 - INFO - Realizando Login
+2023-07-28 10:47:33,747 - INFO - Abrindo Navegador
+2023-07-28 10:47:35,924 - INFO - Realizando Login
+2023-07-28 10:49:09,687 - INFO - Abrindo Navegador
+2023-07-28 10:49:12,043 - INFO - Realizando Login
+2023-07-28 10:49:16,153 - INFO - Nenhuma data de processamento inserida. Encerrando o programa.
+2023-07-28 10:49:23,153 - INFO - Abrindo Navegador
+2023-07-28 10:49:25,483 - INFO - Realizando Login
+2023-07-28 10:49:29,183 - INFO - Clicando no Painel Reduzao Z
+2023-07-28 10:49:30,271 - INFO - Limpando Filtro Loja Inicial e Final
+2023-07-28 10:49:30,384 - INFO - Limpando Filtro PDV Inicial e Final
+2023-07-28 10:49:30,464 - INFO - Preenchendo Informação de Loja: 5114
+2023-07-28 10:50:15,487 - INFO - Abrindo Navegador
+2023-07-28 10:50:17,961 - INFO - Realizando Login
+2023-07-28 10:51:51,471 - INFO - Abrindo Navegador
+2023-07-28 10:51:53,734 - INFO - Realizando Login
+2023-07-28 10:51:59,922 - INFO - Nenhuma data de processamento inserida. Encerrando o programa.
+2023-07-28 10:52:10,201 - INFO - Abrindo Navegador
+2023-07-28 10:52:12,528 - INFO - Realizando Login
+2023-07-28 10:52:22,693 - INFO - Nenhuma data de processamento inserida. Encerrando o programa.
+2023-07-28 11:00:25,872 - INFO - Abrindo Navegador
+2023-07-28 11:00:28,215 - INFO - Realizando Login
+2023-07-28 11:00:36,815 - INFO - Clicando no Painel Reduzao Z
+2023-07-28 11:00:37,908 - INFO - Limpando Filtro Loja Inicial e Final
+2023-07-28 11:00:37,997 - INFO - Limpando Filtro PDV Inicial e Final
+2023-07-28 11:00:38,070 - INFO - Preenchendo Informação de Loja: 5114
+2023-07-28 11:00:42,373 - INFO - Convertendo Data inserida
+2023-07-28 11:00:42,716 - INFO - Ativando CheckBox's
+2023-07-28 11:00:44,351 - INFO - Preenchendo Informação de PDV: 1
+2023-07-28 11:00:46,692 - INFO - Clicando botão Filtrar
+2023-07-28 11:00:48,899 - INFO - Ação de REINTEGRAR Cupom
+2023-07-28 11:00:48,911 - INFO - Selecionando todos Cupons
+2023-07-28 11:00:50,279 - INFO - Clicando no painel Clique aqui
+2023-07-28 11:00:51,587 - INFO - Clicando no botão Reintegrar
+2023-07-28 11:00:51,670 - INFO - Limpando Filtro Loja Inicial e Final
+2023-07-28 11:00:51,800 - INFO - Limpando Filtro PDV Inicial e Final
+2023-07-28 11:00:53,022 - INFO - Preenchendo Informação de PDV: 2
+2023-07-28 11:00:55,329 - INFO - Clicando botão Filtrar
+2023-07-28 11:00:57,536 - INFO - Ação de REINTEGRAR Cupom
+2023-07-28 11:00:57,549 - INFO - Selecionando todos Cupons
+2023-07-28 11:00:58,882 - INFO - Clicando no painel Clique aqui
+2023-07-28 11:01:00,194 - INFO - Clicando no botão Reintegrar
+2023-07-28 11:01:00,288 - INFO - Limpando Filtro Loja Inicial e Final
+2023-07-28 11:01:00,466 - INFO - Limpando Filtro PDV Inicial e Final
+2023-07-28 11:01:01,663 - INFO - Preenchendo Informação de PDV: 3
+2023-07-28 11:01:04,028 - INFO - Clicando botão Filtrar
+2023-07-28 11:01:06,245 - INFO - Ação de REINTEGRAR Cupom
+2023-07-28 11:01:06,265 - INFO - Selecionando todos Cupons
+2023-07-28 11:01:07,602 - INFO - Clicando no painel Clique aqui
+2023-07-28 11:01:08,922 - INFO - Clicando no botão Reintegrar
+2023-07-28 11:01:09,023 - INFO - Limpando Filtro Loja Inicial e Final
+2023-07-28 11:01:09,221 - INFO - Limpando Filtro PDV Inicial e Final
+2023-07-28 11:01:10,438 - INFO - Preenchendo Informação de PDV: 4
+2023-07-28 11:01:12,835 - INFO - Clicando botão Filtrar
+2023-07-28 11:01:15,005 - INFO - Ação de REINTEGRAR Cupom
+2023-07-28 11:01:15,009 - INFO - Campo Cupom Vazio, Pulando para o próximo PDV
+2023-07-28 11:01:15,020 - INFO - Limpando Filtro Loja Inicial e Final
+2023-07-28 11:01:15,196 - INFO - Limpando Filtro PDV Inicial e Final
+2023-07-28 11:01:16,395 - INFO - Clicando no Painel Reduzao Z
+2023-07-28 11:01:17,508 - INFO - Limpando Filtro Loja Inicial e Final
+2023-07-28 11:01:17,648 - INFO - Limpando Filtro PDV Inicial e Final
+2023-07-28 11:01:17,814 - INFO - Preenchendo Informação de Loja: 5119
+2023-07-28 11:01:22,150 - INFO - Convertendo Data inserida
+2023-07-28 11:01:22,616 - INFO - Ativando CheckBox's
+2023-07-28 11:01:24,526 - INFO - Preenchendo Informação de PDV: 1
+2023-07-28 11:01:26,852 - INFO - Clicando botão Filtrar
+2023-07-28 11:01:29,087 - INFO - Ação de REINTEGRAR Cupom
+2023-07-28 11:01:29,103 - INFO - Selecionando todos Cupons
+2023-07-28 11:01:30,449 - INFO - Clicando no painel Clique aqui
+2023-07-28 11:01:30,458 - INFO - Painel Clique Aqui não encontrado
+2023-07-28 11:01:30,458 - INFO - Clicando no botão Reintegrar
+2023-07-28 11:01:30,563 - INFO - Limpando Filtro Loja Inicial e Final
+2023-07-28 11:01:30,760 - INFO - Limpando Filtro PDV Inicial e Final
+2023-07-28 11:01:31,985 - INFO - Preenchendo Informação de PDV: 2
+2023-07-28 11:01:34,346 - INFO - Clicando botão Filtrar
+2023-07-28 11:02:32,616 - INFO - Abrindo Navegador
+2023-07-28 11:02:34,872 - INFO - Realizando Login
+2023-07-28 11:02:44,146 - INFO - Clicando no Painel Reduzao Z
+2023-07-28 11:02:45,243 - INFO - Limpando Filtro Loja Inicial e Final
+2023-07-28 11:02:45,352 - INFO - Limpando Filtro PDV Inicial e Final
+2023-07-28 11:02:45,429 - INFO - Preenchendo Informação de Loja: 5114
+2023-07-28 11:02:49,688 - INFO - Convertendo Data inserida
+2023-07-28 11:02:49,943 - INFO - Ativando CheckBox's
+2023-07-28 11:02:51,500 - INFO - Preenchendo Informação de PDV: 1
+2023-07-28 11:02:53,842 - INFO - Clicando botão Filtrar
+2023-07-28 11:02:56,017 - INFO - Ação de REINTEGRAR Cupom
+2023-07-28 11:02:56,029 - INFO - Selecionando todos Cupons
+2023-07-28 11:02:57,408 - INFO - Clicando no painel Clique aqui
+2023-07-28 11:02:58,733 - INFO - Clicando no botão Reintegrar
+2023-07-28 11:02:58,821 - INFO - Limpando Filtro Loja Inicial e Final
+2023-07-28 11:02:58,943 - INFO - Limpando Filtro PDV Inicial e Final
+2023-07-28 11:03:00,158 - INFO - Preenchendo Informação de PDV: 2
+2023-07-28 11:03:02,532 - INFO - Clicando botão Filtrar
+2023-07-28 11:03:04,726 - INFO - Ação de REINTEGRAR Cupom
+2023-07-28 11:03:04,739 - INFO - Selecionando todos Cupons
+2023-07-28 11:03:06,070 - INFO - Clicando no painel Clique aqui
+2023-07-28 11:03:07,374 - INFO - Clicando no botão Reintegrar
+2023-07-28 11:03:07,463 - INFO - Limpando Filtro Loja Inicial e Final
+2023-07-28 11:03:07,665 - INFO - Limpando Filtro PDV Inicial e Final
+2023-07-28 11:03:08,853 - INFO - Preenchendo Informação de PDV: 3
+2023-07-28 11:03:11,205 - INFO - Clicando botão Filtrar
+2023-07-28 11:03:13,391 - INFO - Ação de REINTEGRAR Cupom
+2023-07-28 11:03:13,404 - INFO - Selecionando todos Cupons
+2023-07-28 11:03:14,742 - INFO - Clicando no painel Clique aqui
+2023-07-28 11:03:16,058 - INFO - Clicando no botão Reintegrar
+2023-07-28 11:03:16,155 - INFO - Limpando Filtro Loja Inicial e Final
+2023-07-28 11:03:16,352 - INFO - Limpando Filtro PDV Inicial e Final
+2023-07-28 11:03:17,510 - INFO - Preenchendo Informação de PDV: 4
+2023-07-28 11:03:19,822 - INFO - Clicando botão Filtrar
+2023-07-28 11:03:21,984 - INFO - Ação de REINTEGRAR Cupom
+2023-07-28 11:03:21,988 - INFO - Campo Cupom Vazio, Pulando para o próximo PDV
+2023-07-28 11:03:21,997 - INFO - Limpando Filtro Loja Inicial e Final
+2023-07-28 11:03:22,163 - INFO - Limpando Filtro PDV Inicial e Final
+2023-07-28 11:03:23,224 - INFO - Clicando no Painel Reduzao Z
+2023-07-28 11:03:24,339 - INFO - Limpando Filtro Loja Inicial e Final
+2023-07-28 11:03:24,540 - INFO - Limpando Filtro PDV Inicial e Final
+2023-07-28 11:03:24,743 - INFO - Preenchendo Informação de Loja: 5119
+2023-07-28 11:03:29,078 - INFO - Convertendo Data inserida
+2023-07-28 11:03:29,477 - INFO - Ativando CheckBox's
+2023-07-28 11:03:31,423 - INFO - Preenchendo Informação de PDV: 1
+2023-07-28 11:03:33,813 - INFO - Clicando botão Filtrar
+2023-07-28 11:03:36,002 - INFO - Ação de REINTEGRAR Cupom
+2023-07-28 11:03:36,014 - INFO - Selecionando todos Cupons
+2023-07-28 11:03:37,362 - INFO - Clicando no painel Clique aqui
+2023-07-28 11:03:37,376 - INFO - Painel Clique Aqui não encontrado
+2023-07-28 11:03:37,376 - INFO - Clicando no botão Reintegrar
+2023-07-28 11:03:37,466 - INFO - Limpando Filtro Loja Inicial e Final
+2023-07-28 11:03:37,636 - INFO - Limpando Filtro PDV Inicial e Final
+2023-07-28 11:03:38,853 - INFO - Preenchendo Informação de PDV: 2
+2023-07-28 11:03:41,165 - INFO - Clicando botão Filtrar
+2023-07-28 11:03:43,334 - INFO - Ação de REINTEGRAR Cupom
+2023-07-28 11:03:43,346 - INFO - Selecionando todos Cupons
+2023-07-28 11:03:44,676 - INFO - Clicando no painel Clique aqui
+2023-07-28 11:03:45,978 - INFO - Clicando no botão Reintegrar
+2023-07-28 11:03:46,043 - INFO - Limpando Filtro Loja Inicial e Final
+2023-07-28 11:03:46,128 - INFO - Limpando Filtro PDV Inicial e Final
+2023-07-28 11:03:47,222 - INFO - Preenchendo Informação de PDV: 3
+2023-07-28 11:03:49,529 - INFO - Clicando botão Filtrar
+2023-07-28 11:03:51,722 - INFO - Ação de REINTEGRAR Cupom
+2023-07-28 11:03:51,734 - INFO - Selecionando todos Cupons
+2023-07-28 11:03:53,074 - INFO - Clicando no painel Clique aqui
+2023-07-28 11:03:54,386 - INFO - Clicando no botão Reintegrar
+2023-07-28 11:03:54,479 - INFO - Limpando Filtro Loja Inicial e Final
+2023-07-28 11:03:54,663 - INFO - Limpando Filtro PDV Inicial e Final
+2023-07-28 11:03:55,896 - INFO - Preenchendo Informação de PDV: 4
+2023-07-28 11:03:58,275 - INFO - Clicando botão Filtrar
+2023-07-28 11:04:00,449 - INFO - Ação de REINTEGRAR Cupom
+2023-07-28 11:04:00,452 - INFO - Campo Cupom Vazio, Pulando para o próximo PDV
+2023-07-28 11:04:00,463 - INFO - Limpando Filtro Loja Inicial e Final
+2023-07-28 11:04:00,644 - INFO - Limpando Filtro PDV Inicial e Final
+2023-07-28 11:04:01,705 - INFO - Clicando no Painel Reduzao Z
+2023-07-28 11:04:02,815 - INFO - Limpando Filtro Loja Inicial e Final
+2023-07-28 11:04:02,932 - INFO - Limpando Filtro PDV Inicial e Final
+2023-07-28 11:04:03,130 - INFO - Preenchendo Informação de Loja: 5134
+2023-07-28 11:04:07,487 - INFO - Convertendo Data inserida
+2023-07-28 11:04:07,888 - INFO - Ativando CheckBox's
+2023-07-28 11:04:09,872 - INFO - Preenchendo Informação de PDV: 1
+2023-07-28 11:04:12,239 - INFO - Clicando botão Filtrar
+2023-07-28 11:04:14,436 - INFO - Ação de REINTEGRAR Cupom
+2023-07-28 11:04:14,448 - INFO - Selecionando todos Cupons
+2023-07-28 11:04:15,788 - INFO - Clicando no painel Clique aqui
+2023-07-28 11:04:15,804 - INFO - Painel Clique Aqui não encontrado
+2023-07-28 11:04:15,804 - INFO - Clicando no botão Reintegrar
+2023-07-28 11:04:15,900 - INFO - Limpando Filtro Loja Inicial e Final
+2023-07-28 11:04:16,092 - INFO - Limpando Filtro PDV Inicial e Final
+2023-07-28 11:04:17,307 - INFO - Preenchendo Informação de PDV: 2
+2023-07-28 11:04:19,642 - INFO - Clicando botão Filtrar
+2023-07-28 11:04:21,850 - INFO - Ação de REINTEGRAR Cupom
+2023-07-28 11:04:21,864 - INFO - Selecionando todos Cupons
+2023-07-28 11:04:23,192 - INFO - Clicando no painel Clique aqui
+2023-07-28 11:04:23,206 - INFO - Painel Clique Aqui não encontrado
+2023-07-28 11:04:23,206 - INFO - Clicando no botão Reintegrar
+2023-07-28 11:04:23,281 - INFO - Limpando Filtro Loja Inicial e Final
+2023-07-28 11:04:23,460 - INFO - Limpando Filtro PDV Inicial e Final
+2023-07-28 11:04:24,673 - INFO - Preenchendo Informação de PDV: 3
+2023-07-28 11:04:27,033 - INFO - Clicando botão Filtrar
+2023-07-28 11:04:29,240 - INFO - Ação de REINTEGRAR Cupom
+2023-07-28 11:04:29,253 - INFO - Selecionando todos Cupons
+2023-07-28 11:04:30,585 - INFO - Clicando no painel Clique aqui
+2023-07-28 11:04:31,897 - INFO - Clicando no botão Reintegrar
+2023-07-28 11:04:31,985 - INFO - Limpando Filtro Loja Inicial e Final
+2023-07-28 11:04:32,187 - INFO - Limpando Filtro PDV Inicial e Final
+2023-07-28 11:04:33,384 - INFO - Preenchendo Informação de PDV: 4
+2023-07-28 11:04:35,738 - INFO - Clicando botão Filtrar
+2023-07-28 11:04:37,929 - INFO - Ação de REINTEGRAR Cupom
+2023-07-28 11:04:37,941 - INFO - Selecionando todos Cupons
+2023-07-28 11:04:39,269 - INFO - Clicando no painel Clique aqui
+2023-07-28 11:04:39,284 - INFO - Painel Clique Aqui não encontrado
+2023-07-28 11:04:39,284 - INFO - Clicando no botão Reintegrar
+2023-07-28 11:04:39,400 - INFO - Limpando Filtro Loja Inicial e Final
+2023-07-28 11:04:39,606 - INFO - Limpando Filtro PDV Inicial e Final
+2023-07-28 11:04:40,826 - INFO - Preenchendo Informação de PDV: 5
+2023-07-28 11:04:43,134 - INFO - Clicando botão Filtrar
+2023-07-28 11:04:45,311 - INFO - Ação de REINTEGRAR Cupom
+2023-07-28 11:04:45,317 - INFO - Campo Cupom Vazio, Pulando para o próximo PDV
+2023-07-28 11:04:45,325 - INFO - Limpando Filtro Loja Inicial e Final
+2023-07-28 11:04:45,550 - INFO - Limpando Filtro PDV Inicial e Final
+2023-07-28 11:04:46,628 - INFO - Preenchendo Informação de PDV: 6
+2023-07-28 11:04:48,937 - INFO - Clicando botão Filtrar
+2023-07-28 11:04:51,082 - INFO - Ação de REINTEGRAR Cupom
+2023-07-28 11:04:51,086 - INFO - Campo Cupom Vazio, Pulando para o próximo PDV
+2023-07-28 11:04:51,095 - INFO - Limpando Filtro Loja Inicial e Final
+2023-07-28 11:04:51,266 - INFO - Limpando Filtro PDV Inicial e Final
+2023-07-28 11:04:52,465 - INFO - Preenchendo Informação de PDV: 7
+2023-07-28 11:04:54,855 - INFO - Clicando botão Filtrar
+2023-07-28 11:04:57,054 - INFO - Ação de REINTEGRAR Cupom
+2023-07-28 11:04:57,054 - INFO - Selecionando todos Cupons
+2023-07-28 11:04:58,390 - INFO - Clicando no painel Clique aqui
+2023-07-28 11:04:58,414 - INFO - Painel Clique Aqui não encontrado
+2023-07-28 11:04:58,414 - INFO - Clicando no botão Reintegrar
+2023-07-28 11:04:58,516 - INFO - Limpando Filtro Loja Inicial e Final
+2023-07-28 11:04:58,725 - INFO - Limpando Filtro PDV Inicial e Final
+2023-07-28 11:04:59,920 - INFO - Clicando no Painel Reduzao Z
