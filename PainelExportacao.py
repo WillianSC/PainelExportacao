@@ -13,6 +13,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import NoSuchElementException
 import time
 import logging
+from webdriver_manager.chrome import ChromeDriverManager
 
 logging.basicConfig(filename='Painel_Exportacao.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
@@ -32,19 +33,21 @@ def painel(driver):
     clickpainel = driver.find_element(By.XPATH, '/html/body/div/div[2]/nav/ul/div/a/p')
     clickpainel.click()
     time.sleep(1)
+    return clickpainel  # Retorna o elemento clicado
 
-def preencher_lojas(driver, loja):
-    logging.info(f"Preenchendo Informação de Loja: {loja}")
+def preencher_lojas(driver, lojas):
+    logging.info(f"Preenchendo Informação de Loja: {', '.join(lojas)}")
+
     lojaInicial = driver.find_element(By.XPATH, "/html/body/div/div[2]/div/div/div[3]/form/div[1]/input")
     lojaInicial.clear()
     time.sleep(1)
-    lojaInicial.send_keys(loja)
+    lojaInicial.send_keys(lojas[0])
     time.sleep(1)
 
     lojaFinal = driver.find_element(By.XPATH, "/html/body/div/div[2]/div/div/div[3]/form/div[2]/input")
     lojaFinal.clear()
     time.sleep(1)
-    lojaFinal.send_keys(loja)
+    lojaFinal.send_keys(lojas[-1])
     time.sleep(1)
 
 def limpa_filtro_loja(driver):
@@ -96,11 +99,11 @@ def preencher_pdvs(driver, pdv):
     pdvInicial = driver.find_element(By.XPATH, "/html/body/div/div[2]/div/div/div[3]/form/div[5]/input")
     pdvInicial.clear()
     time.sleep(1)
-    pdvInicial.send_keys(pdv)
+    pdvInicial.send_keys("1")
     pdvFinal = driver.find_element(By.XPATH, "/html/body/div/div[2]/div/div/div[3]/form/div[6]/input")
     pdvFinal.clear()
     time.sleep(1)
-    pdvFinal.send_keys(pdv)
+    pdvFinal.send_keys("99")
 
 def ativar_checkboxes(driver):
     logging.info("Ativando CheckBox's")
@@ -167,7 +170,6 @@ def on_close():
 
 def main():
     logging.info("Abrindo Navegador") # Abre o Navegador
-    driver_path = "C:\ChromeDriver\chromedriver.exe"
     driver = webdriver.Chrome()
     driver.maximize_window()
     driver.get("http://10.255.4.139:5001/login")
@@ -176,7 +178,7 @@ def main():
     login(driver)  # Realiza Login
 
     # Solicitar a data de processamento ao usuário
-    root = tk.Tk()
+    root = tk.Tk() # Biblioteca que vai tratar o fechamento da GUI
     root.withdraw()
     root.protocol("WM_DELETE_WINDOW", on_close)  # Definir tratamento para o fechamento da janela
 
@@ -198,54 +200,234 @@ def main():
 
     # Lista de Lojas e PDVs
     lojas_pdvs = [
-        {"loja": "5114", "pdvs": ["1", "2", "3", "4"]},
-        {"loja": "5119", "pdvs": ["1", "2", "3", "4"]},
-        {"loja": "5134", "pdvs": ["1", "2", "3", "4", "5", "6", "7"]},
-        {"loja": "5135", "pdvs": ["1", "2", "3", "4", "5"]},
-        {"loja": "5138", "pdvs": ["1", "2", "3"]},
-        {"loja": "5158", "pdvs": ["1", "2", "3", "4"]},
-        {"loja": "5162", "pdvs": ["1", "2", "3", "4", "5"]},
-        {"loja": "5163", "pdvs": ["1", "2", "3", "4", "5"]},
-        {"loja": "5170", "pdvs": ["1", "2", "3", "4", "5"]},
-        {"loja": "5184", "pdvs": ["1", "2", "3", "4", "5"]},
-        {"loja": "5187", "pdvs": ["1", "2", "3", "4", "5"]},
-        {"loja": "5212", "pdvs": ["1", "2", "3", "4", "5"]},
-        {"loja": "5229", "pdvs": ["1", "2", "3", "4"]},
-        {"loja": "5230", "pdvs": ["1", "2", "3", "4"]},
-        {"loja": "5242", "pdvs": ["1", "2", "3", "4"]},
-        {"loja": "5244", "pdvs": ["1", "2", "3", "4"]},
-        {"loja": "5259", "pdvs": ["1", "2", "3", "4"]},
-        {"loja": "5263", "pdvs": ["1", "2", "3", "4", "5"]},
-        {"loja": "5265", "pdvs": ["1", "2", "3", "4"]},
-        {"loja": "5282", "pdvs": ["1", "2", "3", "4"]},
-        {"loja": "5284", "pdvs": ["1", "2", "3", "4"]}
+        {"loja": "5001"},
+        {"loja": "5002"},
+        {"loja": "5003"},
+        {"loja": "5004"},
+        {"loja": "5005"},
+        {"loja": "5006"},
+        {"loja": "5007"},
+        {"loja": "5008"},
+        {"loja": "5009"},
+        {"loja": "5011"},
+        {"loja": "5012"},
+        {"loja": "5013"},
+        {"loja": "5014"},
+        {"loja": "5015"},
+        {"loja": "5016"},
+        {"loja": "5017"},
+        {"loja": "5018"},
+        {"loja": "5019"},
+        {"loja": "5020"},
+        {"loja": "5021"},
+        {"loja": "5022"},
+        {"loja": "5023"},
+        {"loja": "5024"},
+        {"loja": "5025"},
+        {"loja": "5026"},
+        {"loja": "5027"},
+        {"loja": "5028"},
+        {"loja": "5029"},
+        {"loja": "5030"},
+        {"loja": "5031"},
+        {"loja": "5032"},
+        {"loja": "5033"},
+        {"loja": "5034"},
+        {"loja": "5035"},
+        {"loja": "5036"},
+        {"loja": "5037"},
+        {"loja": "5038"},
+        {"loja": "5039"},
+        {"loja": "5040"},
+        {"loja": "5041"},
+        {"loja": "5042"},
+        {"loja": "5043"},
+        {"loja": "5044"},
+        {"loja": "5045"},
+        {"loja": "5046"},
+        {"loja": "5047"},
+        {"loja": "5048"},
+        {"loja": "5049"},
+        {"loja": "5050"},
+        {"loja": "5051"},
+        {"loja": "5052"},
+        {"loja": "5053"},
+        {"loja": "5054"},
+        {"loja": "5055"},
+        {"loja": "5056"},
+        {"loja": "5057"},
+        {"loja": "5058"},
+        {"loja": "5059"},
+        {"loja": "5060"},
+        {"loja": "5061"},
+        {"loja": "5062"},
+        {"loja": "5063"},
+        {"loja": "5064"},
+        {"loja": "5065"},
+        {"loja": "5066"},
+        {"loja": "5067"},
+        {"loja": "5068"},
+        {"loja": "5069"},
+        {"loja": "5070"},
+        {"loja": "5071"},
+        {"loja": "5072"},
+        {"loja": "5073"},
+        {"loja": "5074"},
+        {"loja": "5075"},
+        {"loja": "5076"},
+        {"loja": "5077"},
+        {"loja": "5078"},
+        {"loja": "5079"},
+        {"loja": "5080"},
+        {"loja": "5081"},
+        {"loja": "5082"},
+        {"loja": "5083"},
+        {"loja": "5084"},
+        {"loja": "5085"},
+        {"loja": "5086"},
+        {"loja": "5087"},
+        {"loja": "5088"},
+        {"loja": "5089"},
+        {"loja": "5090"},
+        {"loja": "5091"},
+        {"loja": "5092"},
+        {"loja": "5093"},
+        {"loja": "5094"},
+        {"loja": "5095"},
+        {"loja": "5096"},
+        {"loja": "5097"},
+        {"loja": "5098"},
+        {"loja": "5099"},
+        {"loja": "5100"},
+        {"loja": "5101"},
+        {"loja": "5102"},
+        {"loja": "5103"},
+        {"loja": "5105"},
+        {"loja": "5106"},
+        {"loja": "5107"},
+        {"loja": "5108"},
+        {"loja": "5109"},
+        {"loja": "5110"},
+        {"loja": "5111"},
+        {"loja": "5112"},
+        {"loja": "5113"},
+        {"loja": "5114"},
+        {"loja": "5115"},
+        {"loja": "5116"},
+        {"loja": "5117"},
+        {"loja": "5118"},
+        {"loja": "5119"},
+        {"loja": "5120"},
+        {"loja": "5121"},
+        {"loja": "5122"},
+        {"loja": "5123"},
+        {"loja": "5124"},
+        {"loja": "5126"},
+        {"loja": "5127"},
+        {"loja": "5129"},
+        {"loja": "5130"},
+        {"loja": "5131"},
+        {"loja": "5132"},
+        {"loja": "5133"},
+        {"loja": "5134"},
+        {"loja": "5135"},
+        {"loja": "5136"},
+        {"loja": "5137"},
+        {"loja": "5138"},
+        {"loja": "5139"},
+        {"loja": "5140"},
+        {"loja": "5141"},
+        {"loja": "5142"},
+        {"loja": "5143"},
+        {"loja": "5144"},
+        {"loja": "5145"},
+        {"loja": "5146"},
+        {"loja": "5147"},
+        {"loja": "5148"},
+        {"loja": "5149"},
+        {"loja": "5150"},
+        {"loja": "5151"},
+        {"loja": "5158"},
+        {"loja": "5161"},
+        {"loja": "5162"},
+        {"loja": "5163"},
+        {"loja": "5164"},
+        {"loja": "5184"},
+        {"loja": "5187"},
+        {"loja": "5201"},
+        {"loja": "5212"},
+        {"loja": "5219"},
+        {"loja": "5236"},
+        {"loja": "5240"},
+        {"loja": "5242"},
+        {"loja": "5246"},
+        {"loja": "5254"},
+        {"loja": "5271"},
+        {"loja": "5276"},
+        {"loja": "5286"},
+        {"loja": "7100"},
+        {"loja": "9100"},
+        {"loja": "9101"},
+        {"loja": "9102"},
+        {"loja": "9103"},
+        {"loja": "9104"},
+        {"loja": "9105"},
+        {"loja": "9106"},
+        {"loja": "9107"},
+        {"loja": "9108"},
+        {"loja": "9109"},
+        {"loja": "9110"},
+        {"loja": "9111"},
+        {"loja": "9112"},
+        {"loja": "9113"},
+        {"loja": "9114"},
+        {"loja": "9115"},
+        {"loja": "9116"},
+        {"loja": "9117"},
+        {"loja": "9118"},
+        {"loja": "9119"},
+        {"loja": "9120"},
+        {"loja": "9121"},
+        {"loja": "9122"},
+        {"loja": "9123"},
+        {"loja": "9124"},
+        {"loja": "9125"},
+        {"loja": "9126"},
+        {"loja": "9127"},
+        {"loja": "9128"},
+        {"loja": "9129"},
+        {"loja": "9130"},
+        {"loja": "9131"},
+        {"loja": "9132"},
+        {"loja": "9133"},
+        {"loja": "9134"},
+        {"loja": "9135"},
+        {"loja": "9136"},
+        {"loja": "9137"}       
     ]
     
+    lojas_por_iteracao = 30
+    
     # Loop para iterar sobre as lojas e PDVs
-    for item in lojas_pdvs:
-        loja = item["loja"]
-        pdvs = item["pdvs"]
+    for i in range(0, len(lojas_pdvs), lojas_por_iteracao):
+        lojas_subset = [item["loja"] for item in lojas_pdvs[i:i+lojas_por_iteracao]]
+        # Chama a função painel e guarda o elemento clicado
+        panel_element = painel(driver)
 
-        painel(driver)  # Clica no painel
+        # Agora que o painel foi chamado, podemos preencher as lojas
+        preencher_lojas(driver, lojas_subset)
+        
         limpa_filtro_loja(driver) # Limpa filtro Loja
-        limpa_filtro_pdv(driver) # Limpa filtro PDV
-        preencher_lojas(driver, loja)  # Preenchendo informação de Loja Inicial e Final
         converter_datas(driver, converted_date) # Insere data no campo
         ativar_checkboxes(driver)  # Ativa os checkboxes
-
-        # Loop para iterar sobre os PDVs
-        for pdv in pdvs:
-            preencher_pdvs(driver, pdv)  # Preenchendo campos de PDV inicial e Final
-            filtrar(driver)  # Clica em Filtrar
-
-            # Obter o conteúdo HTML após o filtro
-            html_content = driver.page_source
-            soup = BeautifulSoup(html_content, 'html.parser')
-            time.sleep(1)  # Pequeno atraso para aguardar a ação concluir
-            reintegra_cupom(driver, soup)  # Realiza o processo de Exportação
-            limpa_filtro_loja(driver)  # Limpa os campos de loja antes do próximo loop
-            limpa_filtro_pdv(driver)  # Limpa os campos de pdv antes do próximo loop
-            time.sleep(1)  # Pequeno atraso para aguardar a ação concluir
+        
+        filtrar(driver)  # Clica em Filtrar
+        html_content = driver.page_source
+        soup = BeautifulSoup(html_content, 'html.parser')
+        time.sleep(1)  # Pequeno atraso para aguardar a ação concluir
+        reintegra_cupom(driver, soup)  # Realiza o processo de Exportação
+        limpa_filtro_loja(driver)  # Limpa os campos de loja antes do próximo loop
+        time.sleep(1)  # Pequeno atraso para aguardar a ação concluir
 
     # Fechar o navegador após a conclusão do loop
     driver.quit()
